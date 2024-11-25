@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfileComponent } from './profile.component';
+import { QualidadeDoArComponent } from './qualidade-do-ar.component';
 
-describe('ProfileComponent', () => {
-  let component: ProfileComponent;
-  let fixture: ComponentFixture<ProfileComponent>;
+describe('QualidadeDoArComponent', () => {
+  let component: QualidadeDoArComponent;
+  let fixture: ComponentFixture<QualidadeDoArComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProfileComponent]
+      imports: [QualidadeDoArComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ProfileComponent);
+    fixture = TestBed.createComponent(QualidadeDoArComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

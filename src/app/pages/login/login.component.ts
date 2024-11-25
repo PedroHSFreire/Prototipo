@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
-import { AuthService } from '@auth0/auth0-angular';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -10,8 +8,9 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrl: 'login.component.scss',
 })
 export class LoginComponent {
-  constructor(public auth: AuthService) {}
-  login(): void {
-    this.auth.loginWithRedirect({ appState: { target: '/lista' } });
+  constructor(private router: Router) {}
+
+  navegarParaHome() {
+    this.router.navigate(['/home']);
   }
 }

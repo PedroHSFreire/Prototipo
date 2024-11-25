@@ -1,23 +1,35 @@
-import { Routes } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
-import { navbarGuard } from './guards/navbar.guard';
-import { homeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { HomeComponent } from './pages/home/home.component';
 import { AuthGuard } from '@auth0/auth0-angular';
+import { NgModule } from '@angular/core';
+import { QueimadasComponent } from './pages/queimadas/queimadas.component';
+import { QualidadeDoArComponent } from './pages/qualidade-do-ar/qualidade-do-ar.component';
+import { DeslizamentoComponent } from './pages/deslizamento/deslizamento.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'home', component: homeComponent, canActivate: [AuthGuard] },
-  { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
-
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   {
-    path: 'profile',
-
-    component: ProfileComponent,
-
-    canActivate: [navbarGuard],
+    path: 'queimadas',
+    component: QueimadasComponent,
+    canActivate: [AuthGuard],
   },
-  { path: '', component: LoginComponent },
-  { path: '**', component: homeComponent },
+  {
+    path: 'QualidadeDoAr',
+    component: QualidadeDoArComponent,
+    canActivate: [AuthGuard],
+  },
+  {
+    path: 'Deslizamento',
+    component: DeslizamentoComponent,
+    canActivate: [AuthGuard],
+  },
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

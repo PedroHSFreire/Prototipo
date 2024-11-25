@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Grey+Qo&family=Inconsolata:wght@200..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Markazi+Text:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/*header*/
+h1 {
+  font-family: "Markazi Text", serif;
+}
+header {
+  background-color: rgba(57, 125, 75, 1);
+  padding: 1rem;
+}
+.div_1_header {
+  display: flex;
+  gap: 1300px;
+}
+.div_2_header {
+  display: flex;
+  gap: 60px;
+  margin-left: 25%;
+}
+.AllButton {
+  font-family: "Markazi Text", serif;
+  font-size: 30px;
+  width: 250px;
+  padding: 0.3rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+/*section1*/
+.InfoSection {
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.queimadas {
+  width: 40%;
+  border-radius: 20px;
+}
+
+.TXT {
+  width: 700px;
+  margin-left: 100px;
+}
+h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 30px;
+}
+h3 {
+  font-family: "Markazi Text", serif;
+  font-size: 25px;
+}
+p {
+  font-family: "Markazi Text", serif;
+  font-size: 20px;
+}
+/*section2*/
+.Map-section {
+  background-color: rgba(57, 125, 75, 1);
+  padding: 2rem;
+}
+.menu-container {
+  margin-left: 1500px;
+  position: absolute;
+  cursor: pointer;
+}
+.menu-toggler {
+  padding: 10px;
+}
+.toogle-img {
+  width: 40%;
+}
+.menu {
+  position: absolute;
+}
+.img-aviso {
+  border-radius: 50px;
+}
+input {
+  width: 700px;
+  margin-left: 585px;
+  margin-top: 40px;
+}
+footer {
+  background-color: rgba(94, 195, 98, 1);
+  padding: 2rem;
+}
+.inflamavel {
+  z-index: 1;
+  margin-left: 41%;
+  margin-top: 15%;
+  position: absolute;
+  width: 2%;
+}
+.mapa {
+  margin-left: 32%;
+  width: 40%;
+  border-radius: 20px;
+  z-index: -1;
+}
+/*footer*/
+.footerTXT {
+  font-family: "Markazi Text", serif;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-left: 100px;
+}
+textarea {
+  width: 700px;
+  margin-left: 585px;
+}
+.FooterButton {
+  font-family: "Markazi Text", serif;
+  font-size: 30px;
+  width: 700px;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-left: 585px;
+}
+
+.icons {
+  width: 2%;
+  margin-left: 20px;
+}
